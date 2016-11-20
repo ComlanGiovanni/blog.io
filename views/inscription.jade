@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    #index-banner.section.no-pad-bot
+        .container
+            br
+            br
+            h1.header.center.blue-text Blog Ma gueule
+            .row.center
+                h5.header.col.s12.light Ceci est un blog Ceci est un blog Ceci est un blog Ceci est un blog
+            .row.center
+                a#download-button.btn-large.waves-effect.waves-light.blue(href='http://materializecss.com/getting-started.html') Entrer
+            br
+            br
+    .container
+        form(action='', method='post')
+            p
+                label(for='pseudo') pseudo :
+                input#pseudo(type='text')
+            p
+                label(for='pass') mot de passe :
+                input#pass(type='password', name='pass')
+            p
+                label(for='pass2') votre mot de passe :
+                input#pass2(type='password', name='pass')
+            p
+                label(for='email') e-mail ?
+                input#email(type='text', name='email', tabindex='30')
+                br
+            p
+                input(type='submit')
+        br
+        br
+        .section
