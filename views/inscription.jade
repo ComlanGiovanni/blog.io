@@ -13,16 +13,18 @@ block content
             br
             br
     .container
+        ul.errors
+            if errors
+                each error, i in errors
+                    li.alert.alert-danger #{error.msg}
+
         form(action='', method='post')
             p
                 label(for='pseudo') pseudo :
-                input#pseudo(type='text')
+                input#pseudo(type='text', name='name')
             p
                 label(for='pass') mot de passe :
-                input#pass(type='password', name='pass')
-            p
-                label(for='pass2') votre mot de passe :
-                input#pass2(type='password', name='pass')
+                input#pass(type='password', name='mdp')
             p
                 label(for='email') e-mail ?
                 input#email(type='text', name='email', tabindex='30')
