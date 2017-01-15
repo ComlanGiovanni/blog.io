@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bcea314-1856-4e47-836f-44ba793bb0b3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/connexions.js" afterPath="$PROJECT_DIR$/models/connexions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/inscriptions.js" afterPath="$PROJECT_DIR$/models/inscriptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/connexion.js" afterPath="$PROJECT_DIR$/routes/connexion.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/inscription.js" afterPath="$PROJECT_DIR$/routes/inscription.js" />
-    </list>
+    <list default="true" id="5bcea314-1856-4e47-836f-44ba793bb0b3" name="Default" comment="" />
     <ignored path="blog.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -47,8 +42,8 @@
       <file leaf-file-name="connexions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/connexions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="60" />
+            <state relative-caret-position="450">
+              <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -312,12 +307,12 @@
       <workItem from="1484323457950" duration="910000" />
       <workItem from="1484324378126" duration="5494000" />
       <workItem from="1484338244640" duration="14039000" />
-      <workItem from="1484410251605" duration="5199000" />
+      <workItem from="1484410251605" duration="5448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50447000" />
+    <option name="totallyTimeSpent" value="50696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1154" y="0" width="1413" height="1077" extended-state="0" />
@@ -698,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/connexions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="60" />
+        <state relative-caret-position="450">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
           <folding />
         </state>
       </provider>
