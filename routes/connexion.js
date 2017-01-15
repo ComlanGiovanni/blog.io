@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/connexions');
+//var User = require('../models/connexions');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 passport.serializeUser(function (user, done) {
-   done (null, user.id);
+    done(null, user.id);
 });
 
 passport.deserializeUser(function (id, done) {
@@ -40,8 +40,10 @@ passport.use(new LocalStrategy(
     }
 ));
 
-router.post('/', passport.authenticate('local', { failureRedirect: '/login' }),
+router.post('/', passport.authenticate('local', { failureRedirect: '/connexion', failureFlash:'mdp username non valid' }),
     function(req, res) {
+        console.log('ok');
+        //req.flash('success',"bienc co");
         res.redirect('/');
     });
 
