@@ -1,0 +1,53 @@
+extends layout
+
+block content
+    #index-banner.section.no-pad-bot
+        .container
+            br
+            br
+            h1.header.center.blue-text Blog Ma gueule
+            .row.center
+                h5.header.col.s12.light Ceci est un blog Ceci est un blog Ceci est un blog Ceci est un blog
+            .row.center
+                a#download-button.btn-large.waves-effect.waves-light.blue(href='http://materializecss.com/getting-started.html') Entrer
+            br
+            br
+    .container
+        ul.errors
+            if errors
+                each error, i in errors
+                    li.alert.alert-danger #{error.msg}
+
+        form(action='', method='post')
+            form(method='post' action='', enctype="multipart/form-data")
+                label Title:
+                input(type='text', name='title')
+                br
+                br
+                label Category:
+                select(name='category')
+                //each category, i in catergories
+                //option(value='#{category.title}') #{category.title}
+                br
+                br
+                label Body:
+                    textarea(rows='4', cols='50', name='body')
+                br
+                br
+                label Main Image:
+                    input(type='file', name='mainimage', accept='image/*')
+                br
+                br
+                label Author:
+                select(name='author')
+                    option(value='john') jul
+                    option(value='jul') jul
+                br
+                br
+                input(name="submit" type='submit', value='Save')
+                script(type='text/javascript', src='/ckeditor/ckeditor.js')
+                    script
+                        | CKEDITOR.replace('body');
+        br
+        br
+        .section

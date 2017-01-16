@@ -23,6 +23,8 @@ var routes = require('./routes/index');
 var profil = require('./routes/profil');
 var inscription = require('./routes/inscription');
 var connexion = require('./routes/connexion');
+var home = require('./routes/home');
+var posts = require('./routes/posts');
 
 var app = express();
 
@@ -73,6 +75,8 @@ app.use('/', routes);
 app.use('/profil', profil);
 app.use('/inscription', inscription);
 app.use('/connexion', connexion);
+app.use('/home', home);
+app.use('/posts', posts);
 
 // catch 404 and forward to error handler
 /*

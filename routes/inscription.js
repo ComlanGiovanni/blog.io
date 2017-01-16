@@ -11,9 +11,9 @@ router.post('/', function(req, res, next){
     var email = req.body.email;
     var password = req.body.mdp;
 
-    req.checkBody('name', 'Nom vide').notEmpty();
-    req.checkBody('email', 'Pas email').isEmail();
-    req.checkBody('mdp', 'mdp vide').notEmpty();
+    req.checkBody('name', 'Pseudo Vide').notEmpty();
+    req.checkBody('email', 'Email Invalide').isEmail();
+    req.checkBody('mdp', 'Mot de passe vide').notEmpty();
 
     var errors = req.validationErrors();
 
@@ -36,11 +36,7 @@ router.post('/', function(req, res, next){
             if(err) throw err;
             console.log(user);
         });
-
-        //req.flash('sucess','Bine inscris');
-
-        //req.location('/');
-        res.redirect('/');
+        res.redirect('/connexion');
     }
 });
 
