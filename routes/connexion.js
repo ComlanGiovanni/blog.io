@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
-//var User = require('../models/connexions');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
 /* GET users listing. */
+
 router.get('/', function(req, res, next) {
     res.render('connexion', { title: 'Blog' });
 });
@@ -42,9 +41,7 @@ passport.use(new LocalStrategy(
 
 router.post('/', passport.authenticate('local', { failureRedirect: '/connexion', failureFlash:'mdp username non valid' }),
     function(req, res) {
-        console.log('ok');
-        //req.flash('success',"bienc co");
-        res.redirect('/');
+        res.redirect('/home');
     });
 
 module.exports = router;
